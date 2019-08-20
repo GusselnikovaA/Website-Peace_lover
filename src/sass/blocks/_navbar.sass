@@ -5,6 +5,8 @@
     align-items: center
     padding-top: 17px
     padding-bottom: 33px
+  &__logo
+    padding-right: 45px
   &-list 
     display: flex
     justify-content: space-between
@@ -14,16 +16,27 @@
     list-style: none
     text-transform: uppercase
     &__item 
-      margin-right: 30px
-      border-bottom: 2px solid none
+      position: relative
+      margin-right: 35px
       padding-top: 23px
       padding-bottom: 14px
       &:last-of-child
         margin-right: 0px
       &:hover 
-        border-bottom: 2px solid $secondary-color
         color: $secondary-color
         cursor: pointer
+        &:after
+          content: ''
+          position: absolute
+          bottom: -4px
+          left: 13%
+          z-index: -1
+          display: block
+          width: 70%
+          height: 2px
+          background-color: $secondary-color
+          transition: 0.2s
+          
   &-call
     padding-top: 10px
     padding-bottom: 2px
