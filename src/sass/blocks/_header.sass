@@ -28,4 +28,27 @@
   &__login, &__registration
     font-weight: bold
     font-size: 14px
+  &__login 
+    padding-right: 11px
+    border-right: 1px solid #ccc
+  &__registration
+    margin-left: 9px
+
+@media (max-width: 600px)
+  .header
+    &_location
+      display: none
+
+@media (max-width: 450px)
+  .header
+    &-wrap 
+      padding-top: 12px
+      justify-content: flex-end
+    &_contacts
+      display: none
+
+
+
+
+  
 

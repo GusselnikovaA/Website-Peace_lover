@@ -11,3 +11,37 @@ img
 .container
   max-width: 1200px
   margin: auto
+
+.button
+  outline: none
+  border-radius: 25px
+  border: none 
+  padding: 19px 37px
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+
+.input
+  border: 1px solid $border-input
+  border-radius: 25px
+  padding: 19px 37px
+  font-size: 15px
+  outline: none
+  &:focus
+    box-shadow: 0 0 5px lighten($secondary-color, 10%)
+    border-radius: 25px
+
+@media (max-width: 1250px)
+  .container
+    max-width: 1180px
+    width: 95%
+
+@media (max-width: 768px)
+  .container
+    max-width: 750px
+    width: 95%
+
+@media (max-width: 568px)
+  .container
+    max-width: 550px
+    width: 90%
