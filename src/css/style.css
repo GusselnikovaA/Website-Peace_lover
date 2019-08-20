@@ -431,7 +431,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 18px;
+  padding-top: 17px;
   padding-bottom: 33px;
 }
 
@@ -452,13 +452,23 @@ img {
 .navbar-list__item {
   margin-right: 30px;
   border-bottom: 2px solid none;
+  padding-top: 23px;
   padding-bottom: 14px;
+}
+
+.navbar-list__item:last-of-child {
+  margin-right: 0px;
 }
 
 .navbar-list__item:hover {
   border-bottom: 2px solid #c3759e;
   color: #c3759e;
   cursor: pointer;
+}
+
+.navbar-call {
+  padding-top: 10px;
+  padding-bottom: 2px;
 }
 
 .hero {
