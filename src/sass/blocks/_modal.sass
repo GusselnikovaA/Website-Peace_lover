@@ -13,7 +13,7 @@
     margin: auto
     max-width: 570px
     width: 90%
-    min-height: 500px
+    // min-height: 500px
     background-color: $header-color
     padding: 52px
   &-block
@@ -65,15 +65,40 @@
     font-weight: bold
     line-height: 1.4
 
-@media (max-width: 568px)
+div#username-error
+  position: absolute
+  top: 36%
+  left: 50%
+  display: inline-block
+
+div#userphone-error
+  position: absolute
+  top: 48%
+  left: 50%
+  display: inline-block
+
+div#useremail-error
+  position: absolute
+  top: 59%
+  left: 50%
+  display: inline-block
+
+@media (max-width: 980px)
   .modal
-    &-container 
-      max-width: 400px
+    &-container
+      max-width: 500px
       width: 90%
-      min-height: 300px
-      padding: 15px
+      // min-height: 350px
+      padding: 32px
+
+@media (max-width: 800px)
+  .modal
+    &-container
+      max-width: 450px
+      // min-height: 350px
+      padding: 20px
     &-block 
-      width: 95%
+      width: 80%
     &__title 
       font-size: 18px
       line-height: 1.2
@@ -81,6 +106,8 @@
       margin-bottom: 15px
     &__subtitle
       font-size: 14px
+      margin-bottom: 20px
+    &__input 
       margin-bottom: 15px
     &-call
       width: 250px
@@ -88,6 +115,34 @@
       line-height: 24px
     &__phone
       font-size: 18px
-      line-height: 1.2
       font-weight: bold
-    
+
+  div#username-error
+    top: 27%
+    right: 15%
+  div#userphone-error
+    top: 41%
+    right: 15%
+  div#useremail-error
+    top: 54%
+    right: 15%
+
+
+@media (max-width: 568px)
+  .modal
+    &-container 
+      max-width: 400px
+      // min-height: 300px
+      padding: 15px
+    &__subtitle 
+      display: none
+
+  div#username-error
+    top: 19%
+    right: 15%
+  div#userphone-error
+    top: 34%
+    right: 15%
+  div#useremail-error
+    top: 49%
+    right: 15%

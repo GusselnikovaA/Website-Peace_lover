@@ -19,13 +19,13 @@
       <div class="header-wrap">
         <div class="header_contacts">
           <div class="header_phone">
-              <img src="img/header/header-phone.png" alt="Иконка телефона">
-              <a href="tel:8(950)321-65-55" class="header__phone">8 (950) 321-65-55</a>
+            <img src="img/header/header-phone.png" alt="Иконка телефона">
+            <a href="tel:8(950)321-65-55" class="header__phone">8 (950) 321-65-55</a>
           </div>
           <!-- /.header_phone -->
           <div class="header_location">
-              <img src="img/header/header-location.png" alt="Иконка местоположения">
-              <span class="header__address">Ул. Мира 6, дом 1, офис 4.</span>
+            <img src="img/header/header-location.png" alt="Иконка местоположения">
+            <span class="header__address">Ул. Мира 6, дом 1, офис 4.</span>
           </div>
           <!-- /.header_location -->
         </div>
@@ -50,20 +50,20 @@
         <div class="navbar__logo">
           <img src="img/logo.png" alt="Логотип">
         </div>
-
+        <!-- /.navbar__logo -->
         <div class="navbar-menu">
-            <ul class="navbar-list">
-                <li class="navbar-list__item">главная</li>
-                <li class="navbar-list__item">о компании</li>
-                <li class="navbar-list__item">новости</li>
-                <li class="navbar-list__item">услуги</li>
-                <li class="navbar-list__item">отзывы</li>
-                <li class="navbar-list__item">контакты</li>
-            </ul>
+          <ul class="navbar-list">
+            <li class="navbar-list__item">главная</li>
+            <li class="navbar-list__item">о компании</li>
+            <li class="navbar-list__item">новости</li>
+            <li class="navbar-list__item">услуги</li>
+            <li class="navbar-list__item">отзывы</li>
+            <li class="navbar-list__item">контакты</li>
+          </ul>
         </div>
         <!-- /.navbar-menu -->
         <div class="navbar-call">
-            <img src="img/navbar/navbar-call.png" alt="Логотип">
+          <button type="button" class="modal-alert navbar__button"><img src="img/navbar/navbar-call.png" alt="Логотип"></button>
         </div>
         <!-- /.navbar-call -->
       </div>
@@ -83,8 +83,8 @@
         <p class="hero__text">
           Центр работает в Абакане. Работаем по скайпу по миру, он-лайн консультации. По медиации-Сибирь.
         </p>
-        <button class="button hero__button">связаться с нами</button>
-    </div> <!-- /.hero-content -->
+        <button class="button hero__button modal-alert">связаться с нами</button>
+      </div> <!-- /.hero-content -->
     </div>
     <!-- /.container -->
   </section>
@@ -92,36 +92,105 @@
 
 
 
-<!-- МОДАЛЬНОЕ ОКНО ПРИ НАЖИМЕТ КНОПКИ ПЕРЕЗВОНИТЬ-->
-<div class="modal" id="modal">
-  <div class="modal-container">
-    <div class="modal-block">
-      <button class="modal-block__close" id="close">&times;</button>
-      <h2 class="section-title modal__title">Закажите обратный звонок!
-      </h2>
-      <!-- /.section-title -->
-      <span class="section-subtitle modal__subtitle">Заполните поля ниже <br> и мы свяжемся с Вами в течении 5 минут
-      </span>
-      <!-- /.section-subtitle -->
-      <form action="#" class="form modal__form" id="modal-form">
-        <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
-        <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
-        <button class="button modal__button">Отправить</button>
-      </form>
-      <!-- /.form modal__form -->
-      <div class="modal-call">
-        <span class="modal-call__text">Или Вы можете перезвонить нам сами
-          по телефону:
-        </span>
-        <a href="tel:8(950)321-65-55" class="modal__phone">8 (950) 321-65-55</a>
-      </div>
-      <!-- /.modal-call -->
+  <!-- ОКНО БЛАГОДАРНСТИ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
+  <div class="success" id="success">
+    <div class="success__content">
+      <button class="success__close" id="success-close">&times;</button>
+      <span class="success__text">Спасибо за заявку, скоро мы вам перезвоним.</span>
     </div>
-    <!-- /.modal-container -->
   </div>
-  <!-- /.modal-block -->
-</div>
-<!-- /.modal -->
+  <!-- /.success -->
+
+  <!-- МОДАЛЬНОЕ ОКНО ПРИ НАЖИМЕТ КНОПКИ ПЕРЕЗВОНИТЬ-->
+  <div class="modal" id="modal">
+    <div class="modal-container">
+      <div class="modal-block">
+        <button class="modal-block__close" id="close">&times;</button>
+        <h2 class="section-title modal__title">Закажите обратный звонок!
+        </h2>
+        <!-- /.section-title -->
+        <span class="section-subtitle modal__subtitle">Заполните поля ниже <br> и мы свяжемся с Вами в течении 5 минут
+        </span>
+        <!-- /.section-subtitle -->
+        <form action="#" class="form modal__form" id="modal-form">
+          <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
+          <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
+          <input type="email" name="useremail" class="input modal__input" placeholder="Ваш email">
+          <button type="submit" class="button modal__button">Отправить</button>
+        </form>
+        <!-- /.form modal__form -->
+        <div class="modal-call">
+          <span class="modal-call__text">Или Вы можете перезвонить нам сами
+            по телефону:
+          </span>
+          <a href="tel:8(950)321-65-55" class="modal__phone">8 (950) 321-65-55</a>
+        </div>
+        <!-- /.modal-call -->
+      </div>
+      <!-- /.modal-container -->
+    </div>
+    <!-- /.modal-block -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+
+  <script>
+    // Валидация формы
+    $(document).ready(function () {
+      $('#modal-form').validate({
+        errorElement: "div",
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          userphone: {
+            required: true
+          },
+          useremail: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format("Минимум 2 символа"),
+            maxlength: jQuery.validator.format("Максимум 15 символов")
+          },
+          userphone: "Заполните поле",
+          useremail: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+          }
+        },
+        submitHandler: function (form) {
+          $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $('#modal-form').serialize(),
+            success: function (data) {
+              $("input").val("");
+              $('#modal').removeClass('modal_active');
+              $('#success').addClass('success_active');
+              $('#success-close').on('click', function () {
+                $('#success').removeClass('success_active');
+              });
+            }
+          })
+        }
+      });
+
+      // Маска для телфона
+      $('.phone').mask('+7 (999) 999-99-99');
+    });
+  </script>
 
 </body>
 

@@ -20,6 +20,9 @@ img
   font-size: 14px
   font-weight: bold
   text-transform: uppercase
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 5px darken($secondary-color, 20%)
 
 .input
   border: 1px solid $border-input
@@ -39,7 +42,11 @@ img
 @media (max-width: 768px)
   .container
     max-width: 750px
-    width: 95%
+  .button
+    padding: 15px 20px
+  .input
+    padding: 15px 20px
+
 
 @media (max-width: 568px)
   .container
