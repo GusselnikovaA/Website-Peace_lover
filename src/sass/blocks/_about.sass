@@ -1,6 +1,15 @@
 .about
+  color: $text-color
   &__title
-    margin-bottom: 46px
+    margin-bottom: 50px
+  &__subtitle
+    font-size: 25px
+    font-weight: 700
+    line-height: 28px
+    text-align: center
+    max-width: 230px
+    margin-top: 15px
+    margin-bottom: 15px
   &-cards 
     display: flex
     justify-content: space-between
@@ -8,9 +17,74 @@
   &__card
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-between
     align-items: center
-    max-width: 30%
+    max-width: 31%
+    min-height: 470px
+    &:last-child>h3
+      max-width: 250px
+  &__image
+    &:last-child
+      padding-top: 20px
   &__text
+    margin-top: 0
+    font-size: 15px
+    line-height: 24px
     text-align: center
+    color: $medium-text-color
+  &__link
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    line-height: 24px
+    font-weight: 700
+    font-size: 14px
+    color: $text-color
+    &:hover 
+      color: $secondary-color
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        bottom: -4px
+        left: 13%
+        z-index: -1
+        display: block
+        width: 70%
+        height: 2px
+        background-color: $secondary-color
+        transition: 0.2s  
+
+@media (max-width: 900px)
+  .about
+    &-cards 
+      flex-wrap: wrap
+      justify-content: space-around
+    &__card
+      max-width: 45%
+      min-height: 350px
+      margin-bottom: 10px
+    &__image
+      max-width: 150px
+    &__text
+      line-height: 1.2
+
+@media (max-width: 768px)
+  .about
+    &__title
+      margin-bottom: 40px
+    &-cards 
+      flex-direction: column
+      justify-content: space-around
+    &__card
+      max-width: 90%
+      border-bottom: 1px solid $text-color
+      padding-bottom: 10px
+      min-height: 200px
+    &__subtitle
+      font-size: 20px
+      margin: 5px 0
+      max-width: 90%
+    &__image
+      max-width: 90px
     

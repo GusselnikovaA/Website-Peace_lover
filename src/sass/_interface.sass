@@ -23,7 +23,7 @@ img
     &:after
       content: ''
       position: absolute
-      bottom: -20px
+      bottom: -24px
       z-index: -1
       display: block
       width: 8%
@@ -41,7 +41,7 @@ img
   &:hover
     cursor: pointer
     box-shadow: 0 0 5px darken($secondary-color, 20%)
-
+    
 .input
   border: 1px solid $border-input
   border-radius: 25px
@@ -60,6 +60,10 @@ img
 @media (max-width: 768px)
   .container
     max-width: 750px
+  .section
+    &-title 
+      font-size: 36px
+      line-height: 1
   .button
     padding: 15px 20px
   .input
@@ -70,3 +74,6 @@ img
   .container
     max-width: 550px
     width: 90%
+  .section
+    &-title 
+      font-size: 30px
