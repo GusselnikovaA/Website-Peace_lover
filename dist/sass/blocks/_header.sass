@@ -1,0 +1,54 @@
+.header
+  background-color: $header-color
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    padding-top: 22px
+    padding-bottom: 9px
+  &_contacts
+    display: flex
+    font-size: 15px
+    color: $text-color
+    line-height: 19px
+  &_phone
+    display: flex
+    align-items: center
+    img
+      margin-right: 13px
+  &__phone
+    margin-right: 38px
+  &_location
+    display: flex
+    align-items: center
+    img
+      margin-right: 12px
+  &__phone, &__login, &__registration
+    text-decoration: none
+    color: $text-color
+  &__login, &__registration
+    font-weight: bold
+    font-size: 14px
+  &__login 
+    padding-right: 11px
+    border-right: 1px solid #ccc
+  &__registration
+    margin-left: 9px
+
+@media (max-width: 600px)
+  .header
+    &_location
+      display: none
+
+@media (max-width: 450px)
+  .header
+    &-wrap 
+      padding-top: 12px
+      justify-content: flex-end
+    &_contacts
+      display: none
+
+
+
+
+  
+
