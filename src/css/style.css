@@ -360,6 +360,10 @@ img {
   margin: auto;
 }
 
+.section {
+  padding: 30px 0;
+}
+
 .section-title {
   font-size: 46px;
   font-weight: 700;
@@ -371,12 +375,12 @@ img {
 .section-title:after {
   content: '';
   position: absolute;
-  bottom: -14px;
+  bottom: -20px;
   z-index: -1;
   display: block;
-  width: 7%;
+  width: 8%;
   height: 3px;
-  background-color: #c3759e;
+  background-color: gray;
 }
 
 .button {
@@ -798,6 +802,10 @@ img {
   .hero__button {
     padding: 8px 14px;
   }
+}
+
+.about__title {
+  margin-bottom: 46px;
 }
 
 .about-cards {
