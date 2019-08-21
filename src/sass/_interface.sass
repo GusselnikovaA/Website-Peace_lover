@@ -3,7 +3,7 @@
   
 body
   outline: none
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif
 
 img
   max-width: 100%
@@ -11,6 +11,23 @@ img
 .container
   max-width: 1200px
   margin: auto
+
+.section
+  &-title 
+    font-size: 46px
+    font-weight: 700
+    line-height: 46px
+    color: $text-color
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      bottom: -14px
+      z-index: -1
+      display: block
+      width: 7%
+      height: 3px
+      background-color: $secondary-color 
 
 .button
   outline: none

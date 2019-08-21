@@ -360,6 +360,25 @@ img {
   margin: auto;
 }
 
+.section-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #323232;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  z-index: -1;
+  display: block;
+  width: 7%;
+  height: 3px;
+  background-color: #c3759e;
+}
+
 .button {
   outline: none;
   border-radius: 25px;
