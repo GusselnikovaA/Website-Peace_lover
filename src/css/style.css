@@ -662,6 +662,10 @@ img {
   margin-bottom: 25px;
 }
 
+.hero__button {
+  background-color: #ffffff;
+}
+
 @media (max-width: 1250px) {
   .hero {
     height: 800px;
@@ -775,6 +779,39 @@ img {
   .hero__button {
     padding: 8px 14px;
   }
+}
+
+.about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 30%;
+}
+
+.about__text {
+  text-align: center;
 }
 
 .modal {
@@ -959,20 +996,26 @@ div#useremail-error {
     max-width: 400px;
     padding: 15px;
   }
+  .modal__title {
+    font-size: 16px;
+  }
   .modal__subtitle {
     display: none;
   }
   div#username-error {
     top: 19%;
     right: 15%;
+    font-size: 13px;
   }
   div#userphone-error {
     top: 34%;
     right: 15%;
+    font-size: 13px;
   }
   div#useremail-error {
     top: 49%;
     right: 15%;
+    font-size: 13px;
   }
 }
 
