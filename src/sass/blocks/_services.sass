@@ -1,2 +1,14 @@
 .services
   background-color: $header-color
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__button
+    background-color: $header-color
+    &:hover
+      background-color: $secondary-color
+      color: $light-text-color
+  &-cards 
+    display: flex
+    justify-content: space-between
