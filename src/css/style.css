@@ -1301,6 +1301,29 @@ img {
   }
 }
 
+.up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color: #ffffff;
+  opacity: .6;
+  display: none;
+  z-index: 9999;
+  outline: none;
+}
+
+.up:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #e2bcd0;
+}
+
 .modal {
   position: fixed;
   left: 0;
