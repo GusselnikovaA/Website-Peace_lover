@@ -1,14 +1,65 @@
 .services
-  background-color: $header-color
+  background-color: $background-color
   &-header
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: nowrap
+  &-buttons
+    flex-basis: 40%
   &__button
-    background-color: $header-color
+    background-color: $background-color
+    padding: 13px 23px
     &:hover
       background-color: $secondary-color
-      color: $light-text-color
+      color: $light-color
   &-cards 
     display: flex
     justify-content: space-between
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 23%
+    background-color: $light-color
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+    text-align: center
+    color: $text-color
+    &:hover
+      background-color: $secondary-color
+      color: $light-color
+      .services__subtitle, .price
+        color: $light-color
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__subtitle
+    color: $secondary-color
+    font-size: 22px
+    line-height: 28px
+    font-weight: 700
+    margin-top: 34px
+    margin-bottom: 0
+  &__text
+    position: relative
+    font-size: 15px
+    line-height: 24px
+    &:after
+      content: ''
+      position: absolute
+      left: 13%
+      bottom: -1px
+      z-index: -1
+      display: block
+      width: 8%
+      height: 3px
+      background-color: black
+
+.price
+  display: block
+  color: $secondary-color
+  font-size: 24px
+  line-height: 27px
+  font-weight: 700
