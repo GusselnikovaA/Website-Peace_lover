@@ -1,5 +1,5 @@
 .services
-  // background-color: $background-color
+  background: $background-color
   padding-bottom: 136px
   &-header
     display: flex
@@ -35,6 +35,9 @@
       color: $light-color
       .services__subtitle, .price
         color: $light-color
+      .services__text
+        &::after
+          background-color: $light-color
   &__info
     display: flex
     flex-direction: column
@@ -54,13 +57,13 @@
     &:after
       content: ''
       position: absolute
-      bottom: -2px
-      left: 13%
-      z-index: -1
+      bottom: -10px
+      margin: auto
+      z-index: 1
       display: block
-      width: 70%
+      width: 53px
       height: 2px
-      background-color: $secondary-color
+      background-color: $line-color
 
 .price
   display: block

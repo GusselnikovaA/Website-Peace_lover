@@ -377,7 +377,7 @@ img {
   content: '';
   position: absolute;
   bottom: -24px;
-  z-index: -1;
+  z-index: 1;
   display: block;
   width: 92px;
   height: 3px;
@@ -972,6 +972,7 @@ img {
 }
 
 .services {
+  background: #f7f7f7;
   padding-bottom: 136px;
 }
 
@@ -1046,6 +1047,10 @@ img {
   color: #ffffff;
 }
 
+.services-card:hover .services__text::after {
+  background-color: #ffffff;
+}
+
 .services__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,13 +1085,13 @@ img {
 .services__text:after {
   content: '';
   position: absolute;
-  bottom: -2px;
-  left: 13%;
-  z-index: -1;
+  bottom: -10px;
+  margin: auto;
+  z-index: 1;
   display: block;
-  width: 70%;
+  width: 53px;
   height: 2px;
-  background-color: #c3759e;
+  background-color: #e7e7e7;
 }
 
 .price {
