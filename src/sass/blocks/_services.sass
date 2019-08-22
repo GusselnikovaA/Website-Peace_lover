@@ -1,16 +1,21 @@
 .services
-  background-color: $background-color
+  // background-color: $background-color
+  padding-bottom: 136px
   &-header
     display: flex
     justify-content: space-between
     align-items: center
     flex-wrap: nowrap
+  &__title 
+    &:after
+      width: 50%
   &-buttons
-    flex-basis: 40%
+    flex-basis: 43%
   &__button
     background-color: $background-color
-    padding: 13px 23px
+    padding: 20px
     &:hover
+      padding: 13px 23px
       background-color: $secondary-color
       color: $light-color
   &-cards 
@@ -49,13 +54,13 @@
     &:after
       content: ''
       position: absolute
+      bottom: -2px
       left: 13%
-      bottom: -1px
       z-index: -1
       display: block
-      width: 8%
-      height: 3px
-      background-color: black
+      width: 70%
+      height: 2px
+      background-color: $secondary-color
 
 .price
   display: block
