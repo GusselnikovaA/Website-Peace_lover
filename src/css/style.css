@@ -1095,7 +1095,8 @@ img {
 }
 
 .statistics {
-  padding: 139px 0;
+  padding-top: 139px;
+  padding-bottom: 120px;
   background-color: #282828;
 }
 
@@ -1205,6 +1206,46 @@ img {
   .statistics__subtitle {
     font-size: 14px;
   }
+}
+
+.consultation-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.consultation-text {
+  color: #323232;
+}
+
+.consultation__title {
+  font-size: 41px;
+  margin-bottom: 20px;
+}
+
+.consultation__subtitle {
+  font-size: 14px;
+}
+
+.consultation__buttons {
+  margin-bottom: 20px;
+}
+
+.consultation__button {
+  color: #ffffff;
+  background-color: #c3759e;
+}
+
+.consultation__button:last-child {
+  background-color: #816890;
+  padding: 20px;
+  margin-left: 23px;
 }
 
 .modal {
