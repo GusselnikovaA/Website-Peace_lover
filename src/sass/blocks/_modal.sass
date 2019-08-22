@@ -26,19 +26,27 @@
     text-align: center
     &__close
       position: absolute
-      width: 30px
-      height: 30px
+      width: 40px
+      height: 40px
       top: 0
       right: 0
+      font-size: 30px
+      color: $secondary-color
+      border: none
+      background-color: $background-color
+      outline: none
+      cursor: pointer
+      &:hover
+        color: $main-color
   &__title 
     padding-left: 5px
-    max-width: 360px
     line-height: 35px
-    margin-bottom: 40px
-    font-size: 22px
+    margin-bottom: 20px
+    font-size: 30px
+    color: $main-color
   &__subtitle 
     padding-left: 5px
-    margin-bottom: 50px
+    margin-bottom: 30px
     line-height: 1.2
   &__input 
     margin-bottom: 20px

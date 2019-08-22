@@ -19,3 +19,38 @@
       background-color: $main-color
       padding: 20px
       margin-left: 23px
+
+@media (max-width: 1250px)
+  .consultation
+    &-block
+      flex-direction: column
+      align-items: center
+    &-text
+      text-align: center
+      margin-bottom: 20px
+
+@media (max-width: 768px)
+  .consultation
+    &__title
+      font-size: 30px
+      margin-bottom: 15px
+    &__button
+      &:last-child
+        padding: 15px
+
+@media (max-width: 568px)
+  .consultation
+    &__title
+      margin: 10px 0
+      font-size: 22px
+    &__buttons
+      display: flex
+      flex-direction: column 
+      width: 90%
+    &__button 
+      margin-bottom: 10px
+      max-width: 100%
+      &:last-child
+        margin: 0
+
+    

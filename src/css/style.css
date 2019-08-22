@@ -431,9 +431,11 @@ img {
   }
   .button {
     padding: 15px 20px;
+    font-size: 12px;
   }
   .input {
     padding: 15px 20px;
+    font-size: 12px;
   }
 }
 
@@ -443,7 +445,8 @@ img {
     width: 90%;
   }
   .section-title {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 10px 0;
   }
   .section-title:after {
     content: '';
@@ -1248,6 +1251,56 @@ img {
   margin-left: 23px;
 }
 
+@media (max-width: 1250px) {
+  .consultation-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consultation-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .consultation__button:last-child {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  .consultation__title {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  .consultation__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .consultation__button {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .consultation__button:last-child {
+    margin: 0;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -1294,23 +1347,33 @@ img {
 
 .modal-block__close {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   top: 0;
   right: 0;
+  font-size: 30px;
+  color: #c3759e;
+  border: none;
+  background-color: #f7f7f7;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-block__close:hover {
+  color: #816890;
 }
 
 .modal__title {
   padding-left: 5px;
-  max-width: 360px;
   line-height: 35px;
-  margin-bottom: 40px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #816890;
 }
 
 .modal__subtitle {
   padding-left: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   line-height: 1.2;
 }
 
@@ -1481,6 +1544,16 @@ div#useremail-error {
   position: absolute;
   top: 0;
   right: 0;
+  font-size: 30px;
+  color: #c3759e;
+  border: none;
+  background-color: #f7f7f7;
+  outline: none;
+  cursor: pointer;
+}
+
+.success__close:hover {
+  color: #816890;
 }
 
 .success__text {
