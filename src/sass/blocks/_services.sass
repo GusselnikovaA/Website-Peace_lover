@@ -6,14 +6,18 @@
     justify-content: space-between
     align-items: center
     flex-wrap: nowrap
+    padding-top: 20px
+    padding-bottom: 40px
   &__title 
     &:after
       width: 50%
-  &-buttons
-    flex-basis: 43%
+  &__buttons
+    max-width: 43%
+    margin-right: -20px
   &__button
     background-color: $background-color
     padding: 20px
+    padding-bottom: 15px
     &:hover
       padding: 13px 23px
       background-color: $secondary-color
@@ -35,32 +39,42 @@
       color: $light-color
       .services__subtitle, .price
         color: $light-color
-      .services__text
-        &::after
+      .services__price
+        &::before
           background-color: $light-color
+  &__image 
+    img 
+      width: 100%
   &__info
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
+    padding: 34px
   &__subtitle
     color: $secondary-color
     font-size: 22px
     line-height: 28px
     font-weight: 700
-    margin-top: 34px
-    margin-bottom: 0
+    margin: 0
   &__text
     position: relative
     font-size: 15px
     line-height: 24px
-    &:after
+  &__price 
+    margin-top: 25px 
+    margin-bottom: 0
+    font-size: 14px
+    position: relative
+    &:before
       content: ''
-      position: absolute
-      bottom: -10px
-      margin: auto
-      z-index: 1
       display: block
+      position: absolute
+      top: -20px
+      left: 0
+      right: 0
+      z-index: 1
+      margin: auto
       width: 53px
       height: 2px
       background-color: $line-color
@@ -71,3 +85,101 @@
   font-size: 24px
   line-height: 27px
   font-weight: 700
+
+@media (max-width: 1250px)
+  .services
+    &-header
+      padding-bottom: 30px
+    &__buttons
+      display: flex
+      justify-content: flex-end
+      max-width: 65%
+      margin-right: 0
+    &__button
+      padding: 13px 23px
+      margin-right: 5px
+      &:last-child 
+        margin-right: 0
+    &__info
+      padding: 20px 0
+
+@media (max-width: 1000px)
+  .services
+    padding-bottom: 80px
+    &-cards
+      flex-wrap: wrap
+      justify-content: space-around
+    &-card
+      max-width: 48%
+      margin-bottom: 20px
+      margin-right: 15px
+
+@media (max-width: 994px)
+  .services
+    &__button
+      padding: 10px
+      &:hover 
+        padding: 10px
+        background-color: $background-color
+        color: $text-color
+    &-card
+      &:hover
+        background-color: $light-color
+        color: $text-color
+        .services__subtitle, .price
+          color: $text-color
+        .services__price
+          &::before
+            background-color: $line-color
+
+
+
+@media (max-width: 920px)
+  .services
+    &-header 
+      flex-direction: column
+      padding-top: 0
+    &__title 
+      margin-bottom: 40px
+    &__buttons
+      justify-content: space-between
+      flex-basis: 100%
+    &__text
+      display: none
+
+    
+
+@media (max-width: 630px)
+  .services 
+    padding-bottom: 30px
+    &-card 
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      max-width: 90%
+    &__info
+      padding: 20px
+    &__subtitle
+      font-size: 20px
+      line-height: 1.2
+
+@media (max-width: 500px)
+  .services
+    &__subtitle
+      font-size: 18px
+    &__info 
+      padding: 10px
+
+  .price
+    font-size: 18px
+
+@media (max-width: 400px)
+  .services
+    &__image 
+      display: none
+    &-card
+      width: 90%
+    &__buttons
+      width: 90%
+
+
