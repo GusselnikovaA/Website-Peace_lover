@@ -1194,7 +1194,7 @@ img {
     color: #323232;
   }
   .services-card:hover .services__subtitle, .services-card:hover .price {
-    color: #323232;
+    color: #c3759e;
   }
   .services-card:hover .services__price::before {
     background-color: #e7e7e7;
