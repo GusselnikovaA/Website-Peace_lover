@@ -1509,6 +1509,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 2;
 }
 
 .modal_active {
@@ -1565,10 +1566,8 @@ img {
 
 .modal__title {
   padding-left: 5px;
-  line-height: 35px;
   margin-bottom: 20px;
-  font-size: 30px;
-  color: #816890;
+  font-size: 25px;
 }
 
 .modal__subtitle {
@@ -1617,21 +1616,21 @@ img {
 
 div#username-error {
   position: absolute;
-  top: 36%;
+  top: 32%;
   left: 50%;
   display: inline-block;
 }
 
 div#userphone-error {
   position: absolute;
-  top: 48%;
+  top: 44%;
   left: 50%;
   display: inline-block;
 }
 
 div#useremail-error {
   position: absolute;
-  top: 59%;
+  top: 56%;
   left: 50%;
   display: inline-block;
 }
@@ -1654,7 +1653,6 @@ div#useremail-error {
   }
   .modal__title {
     font-size: 18px;
-    line-height: 1.2;
     max-width: 100%;
     margin-bottom: 15px;
   }
@@ -1675,7 +1673,7 @@ div#useremail-error {
     font-weight: bold;
   }
   div#username-error {
-    top: 27%;
+    top: 28%;
     right: 15%;
   }
   div#userphone-error {
