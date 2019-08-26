@@ -144,6 +144,7 @@
               <iframe class="slider_video" src="https://www.youtube.com/embed/n9kx5Vk0jgc" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+                <!-- <img src="img/IMG_9615-1.JPG" alt=""> -->
               <div class="slider__title">Рабочий процесс</div>
             </div>
             <!-- /.slider__item -->
@@ -431,6 +432,14 @@
         slidesToScroll: 1,
         prevArrow: $('.navigation__left'),
         nextArrow: $('.navigation__right'),
+        responsive: [
+	    {
+	      breakpoint: 620,
+	      settings: {
+	        arrows: false
+	      }
+	    }
+    ]
       });
     });
   </script>

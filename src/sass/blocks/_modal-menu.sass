@@ -29,24 +29,41 @@
   &-container
     position: absolute 
     top: 0
-    right: 0
-    max-width: 200px
-    width: 90%
-    padding-left: 15px
-    padding-top: 15px
+    left: 0
+    width: 100%
+    height: 100%
     background-color: $background-color
+  &-block 
+    width: 100%
+    height: 100%
+  &-nav 
+    width: 100%
+    height: 100%
   &-list 
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: center
+    align-items: center
     padding: 0
-    font-size: 14px
+    width: 100%
+    height: 100%
+    font-size: 20px
     font-weight: 700
     list-style: none
     text-transform: uppercase
+    margin-top: 0
     &__item 
       color: $text-color
       text-decoration: none
       position: relative
       padding: 10px
     
+@media (max-width: 768px)
+  .menu 
+    &-list
+      font-size: 18px 
+
+@media (max-width: 568px)
+  .menu 
+    &-list
+      font-size: 14px 

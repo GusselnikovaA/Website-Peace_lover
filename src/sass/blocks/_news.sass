@@ -189,11 +189,11 @@ iframe
       max-width: 100%
       text-align: center
   .announce 
-    &-wrap 
-      max-width: 100%
-      width: 100%
-    &-social
-      left: 40%
+    // &-wrap 
+    //   max-width: 100%
+    //   width: 100%
+    // &-social
+    //   left: 40%
   .slider 
     &__item 
       margin: auto
@@ -214,29 +214,36 @@ iframe
     &__title
       text-align: center
       margin-bottom: 50px
-    &-social 
-      left: 38%
 
 
 @media (max-width: 620px)
   .slider
+    &__item 
+      max-width: 428px 
+      height: 278px
     &_video
-      width: 428px 
+      max-width: 428px 
       height: 278px
   .announce
+    &-wrap 
+      max-width: 90%
     &-social 
       bottom: 153px
       left: 33%
+
+  .navigation__left, .navigation__right 
+    display: none
 
 
 @media (max-width: 568px)
   .slider
     &__item
-      width: 300px 
-      height: 178px
+      max-width: 400px 
+      height: 258px
     &_video
-      width: 100% 
-      height: 100%
+      max-width: 400px 
+      width: 380px
+      height: 258px
   .news 
     &__image 
       display: none
@@ -258,11 +265,61 @@ iframe
     &_big 
       font-size: 20px
   .announce
+    // &-wrap 
+    //   max-width: 100%
     &-card 
       padding: 0
       min-height: 350px
     &-social
       display: none
+
+@media (max-width: 490px)
+  .slider
+    &__item
+      max-width: 350px 
+      height: 220px
+    &_video
+      max-width: 350px 
+      width: 310px
+      height: 220px
+
+@media (max-width: 430px)
+  .slider
+    &__item
+      max-width: 300px 
+      height: 210px
+    &_video
+      max-width: 300px 
+      width: 310px
+      height: 210px
+  .announce
+    &-card 
+      min-height: 300px
+
+@media (max-width: 390px)
+  .slider
+    &__item
+      width: 260px 
+      height: 190px
+    &_video
+      width: 260px 
+      height: 190px
+  .announce
+    &-wrap 
+      max-width: 100%
+      width: 100%
+
+@media (max-width: 370px)
+  .slider
+    &__item
+      width: 240px 
+      height: 170px
+    &_video
+      width: 240px 
+      height: 170px
+  .announce
+    &-card 
+      min-height: 250px
 
 
 
