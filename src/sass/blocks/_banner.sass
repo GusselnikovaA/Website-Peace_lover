@@ -1,83 +1,97 @@
-.hero
-  height: 916px
-  background: url("../img/hero/hero-background.jpg") no-repeat
+.banner
+  height: 909px
+  background: url("../img/banner/banner.jpg") no-repeat
   background-position: center center
   background-size: cover
   background-color: $main-color
   &-container
     position: relative
-    height: 916px
+    height: 909px
     margin: auto
   &-content 
     position: absolute
-    top: 27%
-    right: 0
+    top: 23%
+    right: 2%
     max-width: 590px
   &__title
     color: $light-color
     text-transform: uppercase
     font-weight: 700
-    font-size: 25px
-    line-height: 72px
-    padding-top: 12px
-    margin-bottom: 10px
+    font-size: 62px
+    line-height: 74px
+    padding-top: 0
+    margin-top: 0
+    margin-bottom: 35px
     margin-left: -5px
     &_big
-      font-size: 88px
+      font-size: 114px
+      line-height: 145px
+    &_medium
+      font-size: 113px
   &__text
     color: $light-color
-    line-height: 25px
+    line-height: 31px
     max-width: 500px
-    font-size: 16px
-    margin-bottom: 25px
+    font-size: 20px
+    margin-bottom: 10px
+    text-transform: uppercase
   &__button
+    padding: 16px 60px
     background-color: $light-color
 
 
 
 @media (max-width: 1250px)
-  .hero
+  .banner
     height: 800px
     &-content 
-      top: 20%
+      top: 19%
 
 @media (max-width: 1100px)
-  .hero
+  .banner
     height: 700px
     &-content 
       max-width: 500px
+      right: 0
     &__title
-      font-size: 20px
-      line-height: 1.4
+      font-size: 42px
+      line-height: 1.2
       &_big
-        font-size: 70px
+        font-size: 84px
+        line-height: 1
+      &_medium
+        font-size: 83px
+        line-height: 1
 
 @media (max-width: 900px)
-  .hero
+  .banner
     height: 600px
     &-content 
-      top: 13%
+      top: 15%
       max-width: 400px
     &__title
-      font-size: 18px
-      line-height: 1.4
+      font-size: 35px
       &_big
-        font-size: 50px
+        font-size: 70px
+      &_medium
+        font-size: 69px
     &__text
       max-width: 400px
       font-size: 14px
 
 @media (max-width: 768px)
-  .hero
+  .banner
     height: 550px
     &-content 
       max-width: 350px
     &__title
       margin: 0
-      font-size: 16px
-      line-height: 1.2
+      margin-bottom: 10px
+      font-size: 35px
       &_big
-        font-size: 45px
+        font-size: 60px
+      &_medium
+        font-size: 59px
     &__text
       max-width: 350px
       font-size: 12px
@@ -85,32 +99,36 @@
       font-size: 12px
 
 @media (max-width: 600px)
-  .hero
+  .banner
     height: 450px
+    &-container
+      height: 450px
     &-content 
-      max-width: 300px
+      top: 20%
+      max-width: 250px
     &__title
-      font-size: 14px
+      font-size: 28px
       &_big
-        font-size: 30px
+        font-size: 50px
+      &_medium
+        font-size: 49px
     &__text
-      max-width: 300px
-      font-size: 10px
+      max-width: 250px
       line-height: 1.2
-    &__button
-      font-size: 10px
 
 @media (max-width: 450px)
-  .hero
+  .banner
     height: 280px
+    &-container
+      height: 280px
     &-content
-      top: 1%
+      top: 3%
       text-align: right
     &__title
-      line-height: 1.8
-      margin-bottom: 30px
-      max-width: 200px
-    &__text
-      display: none
+      &_big
+        font-size: 40px
+      &_medium
+        font-size: 39px
     &__button
+      font-size: 10px
       padding: 8px 14px

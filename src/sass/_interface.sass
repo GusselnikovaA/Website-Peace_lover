@@ -35,7 +35,7 @@ img
   outline: none
   border-radius: 25px
   border: none 
-  padding: 19px 37px
+  padding: 18px 37px
   font-size: 14px
   font-weight: bold
   text-transform: uppercase
@@ -52,6 +52,21 @@ img
   &:focus
     box-shadow: 0 0 5px lighten($secondary-color, 10%)
     border-radius: 25px
+
+.navigation
+  &__left 
+    padding-right: 11px
+    border-right: 2px solid #bcbcbc
+    cursor: pointer
+    outline: none
+    &:hover 
+      color: $text-color-light
+  &__right
+    margin-left: 9px
+    cursor: pointer
+    outline: none
+    &:hover 
+      color: $text-color-light
 
 @media (max-width: 1250px)
   .container

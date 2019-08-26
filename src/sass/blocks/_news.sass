@@ -1,0 +1,263 @@
+.news
+  background: $background-color
+  padding-top: 70px
+  &-block 
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-wrap 
+    width: 50%
+  &__title 
+    margin-bottom: 90px
+  &-cards 
+    display: flex
+    justify-content: flex-start
+  &-card 
+    position: relative
+    padding: 28px 30px
+    padding-bottom: 59px
+    max-width: 47%
+    background-color: $light-color
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05) 
+    margin-right: 26px
+    &:last-child
+      margin-right: 16px
+  &__date
+    position: absolute
+    top: -22px
+    left: 20px
+    width: 71px
+    height: 71px
+    z-index: 5
+    display: flex 
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding-top: 5px
+    border: 2px solid $secondary-color
+    border-radius: 50%
+    background-color: $secondary-color
+    color: $light-color
+    font-size: 14px
+    text-transform: uppercase
+    line-height: 12px
+    &_big 
+      font-size: 30px
+      font-weight: 700
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__subtitle 
+    max-width: 150px
+    margin-top: 25px
+    margin-bottom: 5px
+    font-size: 22px
+    line-height: 28px
+    color: $text-color-light
+  &__text 
+    max-width: 170px
+    font-size: 14px
+    line-height: 24px
+    color: $medium-text-color
+    margin-bottom: 35px
+  &__link
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    line-height: 24px
+    font-weight: 700
+    font-size: 14px
+    color: $text-color
+    &:hover
+      color: $secondary-color
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        bottom: -4px
+        left: 9%
+        z-index: 5
+        display: block
+        width: 44px
+        height: 2px
+        background-color: $secondary-color
+        transition: 0.2s  
+
+
+.announce
+  &__title
+    text-align: left
+    margin-bottom: 90px
+  &-card 
+    min-height: 490px
+    position: relative
+    padding: 28px 30px
+    background-color: $light-color
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+  &-social 
+    position: absolute
+    bottom: 103px
+    left: 195px
+    margin: auto
+    max-width: 200px
+    padding-right: 60px
+    padding-left: 60px
+    padding-bottom: 0
+    background-color: $light-color
+    border-radius: 24px
+  &-list 
+    display: flex
+    list-style: none
+    padding: 0
+  &__item 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 22px
+    height: 22px
+    margin-right: 5px
+  &__navigation 
+    max-width: 210px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: bold
+    color: #bcbcbc
+
+.slider 
+  &__title 
+    margin: 23px 0
+    margin-bottom: 30px
+    text-align: center
+    color: $text-color-light
+    font-size: 22px
+    font-weight: 700
+  &_video
+    width: 528px 
+    height: 328px
+
+iframe 
+  max-width: 100%
+  min-height: 100%
+
+@media (max-width: 1200px)
+  .news 
+    padding-top: 30px
+    &-block
+      flex-direction: column
+      align-items: center
+    &-wrap 
+      max-width: 100%
+      width: 100%
+    &-cards 
+      justify-content: space-around
+    &-card 
+      max-width: 50%
+      width: 50%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      &:last-child
+        margin-right: 0
+    &__info
+      align-items: center
+      max-width: 50%
+      padding-left: 20px
+    &__subtitle
+      max-width: 100%
+      text-align: center
+    &__text 
+      max-width: 100%
+      text-align: center
+
+  .announce 
+    &-wrap 
+      max-width: 100%
+      width: 100%
+    &-social
+      left: 40%
+  .slider 
+    &__item 
+      margin: auto
+
+@media (max-width: 920px)
+  .news
+    &__title 
+      margin-bottom: 70px
+    &-card 
+      flex-direction: column
+    &__image 
+      max-width: 100% 
+    &__info 
+      max-width: 100%
+      width: 100%
+  .announce 
+    &__title
+      text-align: center
+      margin-bottom: 50px
+    &-social 
+      left: 38%
+
+@media (max-width: 620px)
+  .slider
+    &_video
+      width: 428px 
+      height: 278px
+
+  .announce
+    &-social 
+      bottom: 153px
+      left: 33%
+
+@media (max-width: 568px)
+  .slider
+    &_video
+      width: 300px 
+      height: 178px
+
+  .news 
+    &__image 
+      display: none
+    &-cards
+      flex-direction: column
+    &-card 
+      width: 100%
+      max-width: 100%
+      margin-bottom: 30px
+    &__date
+      position: absolute
+      top: -22px
+      left: 20px
+      width: 60px
+      height: 60px
+      padding-top: 5px
+      font-size: 14px
+      line-height: 12px
+    &_big 
+      font-size: 20px
+  .announce
+    &-card 
+      padding: 0
+      min-height: 350px
+    &-social
+      display: none
+
+
+
+
+    
+
+
+
+
+    
+
+  
+
+
+
+  
