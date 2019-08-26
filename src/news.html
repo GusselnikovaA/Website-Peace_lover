@@ -54,12 +54,24 @@
         <!-- /.navbar__logo -->
         <div class="navbar-menu">
           <ul class="navbar-list">
-            <li class="navbar-list__item">главная</li>
-            <li class="navbar-list__item">о компании</li>
-            <li class="navbar-list__item">новости</li>
-            <li class="navbar-list__item">услуги</li>
-            <li class="navbar-list__item">отзывы</li>
-            <li class="navbar-list__item">контакты</li>
+            <li class="navbar-list__item">
+              <a href="index.html">главная</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="">о компании</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="news.html">новости</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="services.html">услуги</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="reviews.html">отзывы</a>
+            </li>
+            <li class="navbar-list__item modal-alert">
+                <a href="javascript:void(0)">контакты</a>
+              </li>
           </ul>
         </div>
         <!-- /.navbar-menu -->
@@ -127,44 +139,44 @@
         <h2 class="section-title announce__title">Анонсы</h2>
         <div class="announce-card">
           <div class="slider">
-              <div class="slider__item">
-                  <iframe class="slider_video" src="https://www.youtube.com/embed/n9kx5Vk0jgc" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-                  <div class="slider__title">Рабочий процесс</div>
-              </div>
-              <!-- /.slider__item -->
+            <div class="slider__item">
+              <iframe class="slider_video" src="https://www.youtube.com/embed/n9kx5Vk0jgc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="slider__title">Рабочий процесс</div>
             </div>
-            <!-- /.slider -->
-            <div class="announce-social">
-                <ul class="announce-list">
-                    <li class="announce__item">
-                      <a href="#">
-                        <img src="img/news/icon_vk.png" alt="Иконка вк">
-                      </a>
-                    </li>
-                    <li class="announce__item">
-                      <a href="#">
-                        <img src="img/news/icon_fb.png" alt="Иконка фэйсбук">
-                      </a>
-                    </li>
-                    <li class="announce__item">
-                      <a href="#">
-                        <img src="img/news/icon_insta.png" alt="Иконка инстаграм">
-                      </a>
-                    </li>
-                  </ul>
+            <!-- /.slider__item -->
+          </div>
+          <!-- /.slider -->
+          <div class="announce-social">
+            <ul class="announce-list">
+              <li class="announce__item">
+                <a href="#">
+                  <img src="img/news/icon_vk.png" alt="Иконка вк">
+                </a>
+              </li>
+              <li class="announce__item">
+                <a href="#">
+                  <img src="img/news/icon_fb.png" alt="Иконка фэйсбук">
+                </a>
+              </li>
+              <li class="announce__item">
+                <a href="#">
+                  <img src="img/news/icon_insta.png" alt="Иконка инстаграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.announce-social -->
+          <div class="navigation announce__navigation">
+            <div class="navigation__left">
+              предыдущий
             </div>
-            <!-- /.announce-social -->
-            <div class="navigation announce__navigation">
-              <div class="navigation__left">
-                предыдущий
-              </div>
-              <div class="navigation__right">
-                следующий
-              </div>
+            <div class="navigation__right">
+              следующий
             </div>
-            <!-- /.navigation -->
+          </div>
+          <!-- /.navigation -->
         </div>
         <!-- /.announce-card -->
       </div>
@@ -236,9 +248,9 @@
             <li class="footer-list__item">
               <a href="#">Анонсы</a>
             </li>
-            <li class="footer-list__item">
-              <a href="#">Контакты</a>
-            </li>
+            <li class="footer-list__item modal-alert">
+                <a href="javascript:void(0)">Контакты</a>
+              </li>
           </ul>
           <!-- /.footer-list -->
         </div>

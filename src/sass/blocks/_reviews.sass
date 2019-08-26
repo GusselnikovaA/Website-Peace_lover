@@ -1,0 +1,117 @@
+.reviews
+  background-color: $secondary-color
+  background-image: url('../img/reviews/back.png')
+  background: linear-gradient($secondary-color, $main-color)
+  background-repeat: no-repeat 
+  background-position: center center
+  padding-bottom: 150px
+  padding-top: 97px
+  &__title 
+    font-size: 41px
+    line-height: 46px
+    color: $light-color
+    text-align: center
+    margin-bottom: 95px
+    margin-top: 0
+    &:after
+        left: 0
+        right: 0
+        margin: auto
+        bottom: -37px
+  &-cards 
+    display: flex
+    justify-content: space-between
+  &__card 
+    max-width: 379px
+    width: 33%
+  &__info 
+    background-color: $light-color
+    padding: 56px 35px
+    padding-bottom: 52px
+    color: $medium-text-color
+    position: relative
+    margin-bottom: 20px
+    &:after
+      content: url('../img/reviews/arrow.png')
+      position: absolute
+      bottom: -23px
+      left: 30px
+  &__text 
+    font-size: 15px
+    line-height: 24px
+    margin-top: 22px
+    margin-bottom: 0
+  &__author 
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 20px
+
+
+
+.author
+  &__photo 
+    margin-right: 19px
+  &-description 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    color: $light-color
+    font-weight: bold
+  &-name 
+    font-size: 22px
+    margin-bottom: 12px
+  &-profession
+    font-size: 14px
+
+@media (max-width: 1250px)
+  .reviews
+    &__card 
+      margin-right: 15px
+      &:last-child 
+        margin-right: 0
+
+@media (max-width: 920px)
+  .reviews
+    text-align: left
+    padding-bottom: 90px
+    padding-top: 60px
+    &-cards 
+      flex-wrap: wrap
+      justify-content: space-around
+    &__card 
+      max-width: 80%
+      width: 100%
+      margin-bottom: 30px
+      margin-right: 0
+    &__info 
+      padding: 35px
+    &__author 
+      padding-top: 5px
+
+@media (max-width: 768px)
+  .reviews
+    &__title 
+      margin-bottom: 50px
+      &:after 
+        bottom: -20px
+
+
+@media (max-width: 568px)
+  .reviews
+    padding-bottom: 60px
+    padding-top: 40px
+    &__title 
+      font-size: 25px
+    &__card 
+      max-width: 95%
+
+  .author
+    &-name 
+      font-size: 16px
+
+
+
+
+      

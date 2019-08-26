@@ -22,13 +22,21 @@
     margin-right: 26px
     &:last-child
       margin-right: 16px
+    &:hover
+      background-color: $secondary-color
+      color: $light-color
+      cursor: pointer
+      .news__subtitle, .news__text, .news__link
+        color: $light-color
+      .news__link:after
+        background-color: $light-color
   &__date
     position: absolute
     top: -22px
     left: 20px
     width: 71px
     height: 71px
-    z-index: 5
+    z-index: 1
     display: flex 
     justify-content: center
     align-items: center
@@ -95,6 +103,13 @@
     padding: 28px 30px
     background-color: $light-color
     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+    &:hover
+      background-color: $secondary-color
+      cursor: pointer
+      .announce-social
+        background-color: $secondary-color
+      .slider__title 
+        color: $light-color
   &-social 
     position: absolute
     bottom: 103px

@@ -47,19 +47,31 @@
   <!-- ВЕРХНЯЯ СЕКЦИЯ НАВИГАЦИИ -->
   <nav class="navbar">
     <div class="container">
-      <div class="navbar-block">
+      <div class="navbar-block navbar__main">
         <div class="navbar__logo">
           <img src="img/logo.png" alt="Логотип">
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar-menu">
           <ul class="navbar-list">
-            <li class="navbar-list__item">главная</li>
-            <li class="navbar-list__item">о компании</li>
-            <li class="navbar-list__item">новости</li>
-            <li class="navbar-list__item">услуги</li>
-            <li class="navbar-list__item">отзывы</li>
-            <li class="navbar-list__item">контакты</li>
+            <li class="navbar-list__item">
+              <a href="index.html">главная</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="#about">о компании</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="news.html">новости</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="services.html">услуги</a>
+            </li>
+            <li class="navbar-list__item">
+              <a href="reviews.html">отзывы</a>
+            </li>
+            <li class="navbar-list__item modal-alert">
+              <a href="javascript:void(0)">контакты</a>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-menu -->
@@ -102,7 +114,7 @@
 
 
   <!-- СЕКЦИЯ О НАС (ПОЧЕМУ МЫ) -->
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="container">
       <h2 class="section-title about__title">Почему мы?</h2>
       <div class="about-cards">
@@ -291,7 +303,8 @@
           <div class="footer-logo">
             <img src="img/footer/footer-logo.png" alt="">
           </div>
-          <p class="footer__text">С другой стороны консультация с широким активом в значительной степени обуславливает создание</p>
+          <p class="footer__text">С другой стороны консультация с широким активом в значительной степени обуславливает
+            создание</p>
           <ul class="footer-social">
             <li class="footer-social__item">
               <a href="#">
@@ -320,8 +333,8 @@
             <li class="footer-list__item">
               <a href="#">Анонсы</a>
             </li>
-            <li class="footer-list__item">
-              <a href="#">Контакты</a>
+            <li class="footer-list__item modal-alert">
+              <a href="javascript:void(0)">Контакты</a>
             </li>
           </ul>
           <!-- /.footer-list -->
@@ -356,7 +369,7 @@
       <!-- /.footer-wrap -->
       <div class="footer-copyright">
         <div class="footer-copyright__text">
-            Создание и продвижение сайта: <span class="footer-copyright__company">Glo Academy</span>
+          Создание и продвижение сайта: <span class="footer-copyright__company">Glo Academy</span>
         </div>
       </div>
     </div>

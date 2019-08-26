@@ -4,6 +4,8 @@
     justify-content: space-between
     align-items: center
     padding-top: 17px
+    padding-bottom: 25px
+  &__main 
     padding-bottom: 33px
   &__logo
     padding-right: 45px
@@ -25,6 +27,8 @@
       &:hover 
         color: $secondary-color
         cursor: pointer
+        a 
+          color: $secondary-color
         &:after
           content: ''
           position: absolute
@@ -36,6 +40,9 @@
           height: 2px
           background-color: $secondary-color !important
           transition: 0.2s  
+      a 
+        text-decoration: none
+        color: $text-color
   &-call
     padding-top: 10px
     padding-bottom: 2px
