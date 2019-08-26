@@ -76,8 +76,10 @@
         </div>
         <!-- /.navbar-menu -->
         <div class="navbar-call">
-          <button type="button" class="modal-alert navbar__button"><img src="img/navbar/navbar-call.png"
-              alt="Логотип"></button>
+          <button class="button navbar-menu__button menu-alert">меню</button>
+          <button type="button" class="modal-alert navbar__button">
+            <img src="img/navbar/navbar-call.png" alt="Логотип">
+          </button>
         </div>
         <!-- /.navbar-call -->
       </div>
@@ -333,9 +335,35 @@
   </div>
   <!-- /.modal -->
 
+  <!-- МОДАЛЬНОЕ ОКНО МЕНЮ-->
+  <div class="modal-menu" id="modal-menu">
+      <div class="menu-container">
+        <div class="menu-block">
+          <button class="modal-menu__close" id="menu-close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="menu-nav">
+            <ul class="menu-list">
+              <a href="index.html" class="menu-list__item">главная</a>
+              <a href="#about" class="menu-list__item">о компании</a>
+              <a href="news.html" class="menu-list__item">новости</a>
+              <a href="services.html" class="menu-list__item">услуги</a>
+              <a href="reviews.html" class="menu-list__item">отзывы</a>
+              <a href="javascript:void(0)" class="menu-list__item modal-alert">контакты</a>
+            </ul>
+          </div>
+          <!-- /.menu-nav -->
+        </div>
+        <!-- /.menu-block -->
+      </div>
+      <!-- /.menu-container -->
+    </div>
+    <!-- /.modal-menu -->
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
+  <script src="js/modal-menu.js"></script>
   <script src="js/up.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
