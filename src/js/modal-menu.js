@@ -1,7 +1,7 @@
 $(document).ready(function(){
   let menuAlert = $('.menu-alert');
   let modalMenu = $('#modal-menu');
-  let closeMenu = $('#menu-close');
+  let closeMenu = $('.menu-close');
 
   menuAlert.on('click', function(){
     modalMenu.addClass('modal-menu_active');

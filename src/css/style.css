@@ -633,6 +633,8 @@ img {
   margin-right: 35px;
   padding-top: 23px;
   padding-bottom: 14px;
+  text-decoration: none;
+  color: #323232;
 }
 
 .navbar-list__item:last-of-child {
@@ -642,10 +644,6 @@ img {
 .navbar-list__item:hover {
   color: #c3759e;
   cursor: pointer;
-}
-
-.navbar-list__item:hover a {
-  color: #c3759e;
 }
 
 .navbar-list__item:hover:after {
@@ -660,11 +658,6 @@ img {
   background-color: #c3759e !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.navbar-list__item a {
-  text-decoration: none;
-  color: #323232;
 }
 
 .navbar-call {
@@ -2885,6 +2878,7 @@ div#useremail-error {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 3;
 }
 
 .success_active {

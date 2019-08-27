@@ -55,24 +55,12 @@
         <!-- /.navbar__logo -->
         <div class="navbar-menu">
           <ul class="navbar-list">
-            <li class="navbar-list__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="navbar-list__item">
-              <a href="#about">о компании</a>
-            </li>
-            <li class="navbar-list__item">
-              <a href="news.html">новости</a>
-            </li>
-            <li class="navbar-list__item">
-              <a href="services.html">услуги</a>
-            </li>
-            <li class="navbar-list__item">
-              <a href="reviews.html">отзывы</a>
-            </li>
-            <li class="navbar-list__item modal-alert">
-              <a href="javascript:void(0)">контакты</a>
-            </li>
+            <a href="index.html" class="navbar-list__item">главная</a>
+            <a href="#about" class="navbar-list__item">о компании</a>
+            <a href="news.html" class="navbar-list__item">новости</a>
+            <a href="services.html" class="navbar-list__item">услуги</a>
+            <a href="reviews.html" class="navbar-list__item">отзывы</a>
+            <a href="javascript:void(0)" class="navbar-list__item modal-alert">контакты</a>
           </ul>
         </div>
         <!-- /.navbar-menu -->
@@ -331,10 +319,10 @@
           <h4 class="footer__title">О компании</h4>
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a href="#">Новости</a>
+              <a href="news.html">Новости</a>
             </li>
             <li class="footer-list__item">
-              <a href="#">Анонсы</a>
+              <a href="news.html">Анонсы</a>
             </li>
             <li class="footer-list__item modal-alert">
               <a href="javascript:void(0)">Контакты</a>
@@ -432,17 +420,17 @@
   <div class="modal-menu" id="modal-menu">
       <div class="menu-container">
         <div class="menu-block">
-          <button class="modal-menu__close" id="menu-close">
+          <button class="modal-menu__close menu-close">
             <i class="fa fa-times"></i>
           </button>
           <div class="menu-nav">
             <ul class="menu-list">
               <a href="index.html" class="menu-list__item">главная</a>
-              <a href="#about" class="menu-list__item">о компании</a>
+              <a href="#about" class="menu-list__item menu-close">о компании</a>
               <a href="news.html" class="menu-list__item">новости</a>
               <a href="services.html" class="menu-list__item">услуги</a>
               <a href="reviews.html" class="menu-list__item">отзывы</a>
-              <a href="javascript:void(0)" class="menu-list__item modal-alert">контакты</a>
+              <a href="javascript:void(0)" class="menu-list__item modal-alert menu-close">контакты</a>
             </ul>
           </div>
           <!-- /.menu-nav -->
