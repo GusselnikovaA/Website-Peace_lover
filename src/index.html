@@ -14,7 +14,26 @@
 </head>
 
 <body>
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55070110, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/55070110" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(55070110, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script> <noscript>
+    <div><img src="https://mc.yandex.ru/watch/55070110" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
   <!-- ШАПКА ПРОФИЛЯ С КОНТАКТАМИ -->
   <header class="header">
     <div class="container">
@@ -50,7 +69,9 @@
     <div class="container">
       <div class="navbar-block navbar__main">
         <div class="navbar__logo">
-          <img src="img/logo.png" alt="Логотип">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Логотип">
+          </a>
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar-menu">
@@ -395,7 +416,8 @@
         <span class="section-subtitle modal__subtitle">Заполните поля ниже <br> и мы свяжемся с Вами в течении 5 минут
         </span>
         <!-- /.section-subtitle -->
-        <form action="#" class="form modal__form" id="modal-form" onsubmit="ym(55070110, 'reachGoal', 'send'); return true;">
+        <form action="#" class="form modal__form" id="modal-form"
+          onsubmit="ym(55070110, 'reachGoal', 'send'); return true;">
           <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
           <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
           <input type="email" name="useremail" class="input modal__input" placeholder="Ваш email">
@@ -418,28 +440,28 @@
 
   <!-- МОДАЛЬНОЕ ОКНО МЕНЮ-->
   <div class="modal-menu" id="modal-menu">
-      <div class="menu-container">
-        <div class="menu-block">
-          <button class="modal-menu__close menu-close">
-            <i class="fa fa-times"></i>
-          </button>
-          <div class="menu-nav">
-            <ul class="menu-list">
-              <a href="index.html" class="menu-list__item">главная</a>
-              <a href="#about" class="menu-list__item menu-close">о компании</a>
-              <a href="news.html" class="menu-list__item">новости</a>
-              <a href="services.html" class="menu-list__item">услуги</a>
-              <a href="reviews.html" class="menu-list__item">отзывы</a>
-              <a href="javascript:void(0)" class="menu-list__item modal-alert menu-close">контакты</a>
-            </ul>
-          </div>
-          <!-- /.menu-nav -->
+    <div class="menu-container">
+      <div class="menu-block">
+        <button class="modal-menu__close menu-close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="menu-nav">
+          <ul class="menu-list">
+            <a href="index.html" class="menu-list__item">главная</a>
+            <a href="#about" class="menu-list__item menu-close">о компании</a>
+            <a href="news.html" class="menu-list__item">новости</a>
+            <a href="services.html" class="menu-list__item">услуги</a>
+            <a href="reviews.html" class="menu-list__item">отзывы</a>
+            <a href="javascript:void(0)" class="menu-list__item modal-alert menu-close">контакты</a>
+          </ul>
         </div>
-        <!-- /.menu-block -->
+        <!-- /.menu-nav -->
       </div>
-      <!-- /.menu-container -->
+      <!-- /.menu-block -->
     </div>
-    <!-- /.modal-menu -->
+    <!-- /.menu-container -->
+  </div>
+  <!-- /.modal-menu -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
