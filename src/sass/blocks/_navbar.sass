@@ -11,9 +11,6 @@
     padding-right: 45px
   &-menu 
     &__button
-      padding: 10px 37px
-      color: $light-color
-      background-color: $secondary-color
       display: none
   &-list 
     display: flex
@@ -80,6 +77,41 @@
       &__button
         display: flex
         margin-right: 20px
+        width: 45px
+        height: 45px
+        padding: 0
+        border-radius: 50%
+        border: none
+        background-color: $secondary-color
+        outline: none
+        cursor: pointer
+        position: relative
+        span
+          position: absolute
+          top: 50%
+          margin-top: -1px
+          left: 50%
+          margin-left: -10px
+          width: 20px
+          height: 2px
+          background-color: #fff
+          &:before, &:after
+            display: block
+            content: ''
+            position: absolute
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -10px
+            width: 20px
+            height: 2px
+            transition: 0.3s
+            background-color: #fff
+          &:before
+            transform: translateY(-5px)
+          &:after
+            transform: translateY(5px)
+
     &-list 
       display: none 
     &-call
@@ -98,13 +130,6 @@
       max-width: 300px
       padding-right: 15px
 
-@media (max-width: 500px)
-  .navbar
-    &-menu
-      &__button
-        padding: 5px 15px 
-        font-size: 12px
-        margin-right: 5px
 
 @media (max-width: 450px)
   .navbar
@@ -115,8 +140,9 @@
       height: 35px
     &-menu
       &__button
-        padding: 0px 10px 
-        font-size: 9px
+        width: 35px
+        height: 35px
+        margin-right: 10px
 
 
 

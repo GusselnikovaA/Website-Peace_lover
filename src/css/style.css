@@ -608,9 +608,6 @@ img {
 }
 
 .navbar-menu__button {
-  padding: 10px 37px;
-  color: #ffffff;
-  background-color: #c3759e;
   display: none;
 }
 
@@ -699,6 +696,47 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #c3759e;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  .navbar-menu__button span {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .navbar-menu__button span:before, .navbar-menu__button span:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #fff;
+  }
+  .navbar-menu__button span:before {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .navbar-menu__button span:after {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   .navbar-list {
     display: none;
@@ -724,14 +762,6 @@ img {
   }
 }
 
-@media (max-width: 500px) {
-  .navbar-menu__button {
-    padding: 5px 15px;
-    font-size: 12px;
-    margin-right: 5px;
-  }
-}
-
 @media (max-width: 450px) {
   .navbar__logo {
     max-width: 250px;
@@ -741,8 +771,9 @@ img {
     height: 35px;
   }
   .navbar-menu__button {
-    padding: 0px 10px;
-    font-size: 9px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
   }
 }
 
