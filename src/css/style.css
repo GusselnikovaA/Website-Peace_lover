@@ -395,9 +395,10 @@ img {
 }
 
 .button:hover {
+  background-color: #c3759e;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 5px #92406b;
-          box-shadow: 0 0 5px #92406b;
+  -webkit-box-shadow: 0 0 10px #c3759e;
+          box-shadow: 0 0 10px #c3759e;
 }
 
 .input {
@@ -928,11 +929,10 @@ img {
 .consultation__button {
   padding: 16px 37px;
   color: #ffffff;
-  background-color: #c3759e;
+  background-color: #816890;
 }
 
 .consultation__button:last-child {
-  background-color: #816890;
   padding: 16px 20px;
   margin-left: 23px;
 }
@@ -2218,19 +2218,6 @@ img {
           box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05);
 }
 
-.announce-card:hover {
-  background-color: #c3759e;
-  cursor: pointer;
-}
-
-.announce-card:hover .announce-social {
-  background-color: #c3759e;
-}
-
-.announce-card:hover .slider__title {
-  color: #ffffff;
-}
-
 .announce-social {
   position: absolute;
   bottom: 103px;
@@ -2282,7 +2269,11 @@ img {
   color: #bcbcbc;
 }
 
-.slider__title {
+.announce-slider {
+  max-width: 528px;
+}
+
+.announce-slider__title {
   margin: 23px 0;
   margin-bottom: 30px;
   text-align: center;
@@ -2291,14 +2282,9 @@ img {
   font-weight: 700;
 }
 
-.slider_video {
+iframe {
   width: 528px;
   height: 328px;
-}
-
-iframe {
-  max-width: 100%;
-  min-height: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -2357,7 +2343,10 @@ iframe {
     max-width: 100%;
     text-align: center;
   }
-  .slider__item {
+  .announce-wrap {
+    max-width: 100%;
+  }
+  .announce-slider__item {
     margin: auto;
   }
 }
@@ -2383,42 +2372,23 @@ iframe {
     text-align: center;
     margin-bottom: 50px;
   }
-}
-
-@media (max-width: 620px) {
-  .slider__item {
-    max-width: 428px;
-    height: 278px;
-  }
-  .slider_video {
-    max-width: 428px;
-    height: 278px;
-  }
-  .announce-wrap {
-    max-width: 90%;
-  }
   .announce-card {
-    min-height: 400px;
+    min-height: 420px;
+  }
+  .announce-slider {
+    max-width: 430px;
   }
   .announce-social {
-    bottom: 63px;
-    left: 30%;
+    bottom: 113px;
+    left: 145px;
   }
-  .navigation__left, .navigation__right {
-    display: none;
+  iframe {
+    width: 428px;
+    height: 250px;
   }
 }
 
 @media (max-width: 568px) {
-  .slider__item {
-    max-width: 400px;
-    height: 258px;
-  }
-  .slider_video {
-    max-width: 400px;
-    width: 380px;
-    height: 258px;
-  }
   .news__image {
     display: none;
   }
@@ -2446,80 +2416,22 @@ iframe {
   .news_big {
     font-size: 20px;
   }
-  .announce-card {
-    padding: 0;
-    padding-top: 15px;
-    min-height: 350px;
+  iframe {
+    margin: 0 auto;
+    width: 328px;
+    height: 250px;
+  }
+  .announce-slider {
+    max-width: 330px;
   }
   .announce-social {
     display: none;
   }
 }
 
-@media (max-width: 490px) {
-  .slider__item {
-    max-width: 350px;
-    height: 220px;
-  }
-  .slider_video {
-    max-width: 350px;
-    width: 310px;
-    height: 220px;
-  }
-  .announce-card {
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 430px) {
-  .slider__item {
-    max-width: 300px;
-    height: 210px;
-  }
-  .slider_video {
-    max-width: 300px;
-    width: 310px;
-    height: 210px;
-  }
-  .announce-card {
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 390px) {
-  .slider__item {
-    width: 260px;
-    height: 190px;
-  }
-  .slider_video {
-    width: 260px;
-    height: 190px;
-  }
-  .announce-wrap {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 370px) {
-  .slider__item {
-    width: 240px;
-    height: 170px;
-  }
-  .slider_video {
-    width: 240px;
-    height: 170px;
-  }
-  .announce-card {
-    min-height: 250px;
-  }
-}
-
 .reviews {
-  background-color: #c3759e;
-  background-image: url("../img/reviews/back.png");
-  background: -webkit-gradient(linear, left top, left bottom, from(#c3759e), to(#816890));
-  background: linear-gradient(#c3759e, #816890);
+  background: url("../img/reviews/back.png"), -webkit-gradient(linear, left top, left bottom, from(#c3759e), to(#816890));
+  background: url("../img/reviews/back.png"), linear-gradient(#c3759e, #816890);
   background-repeat: no-repeat;
   background-position: center center;
   padding-bottom: 150px;

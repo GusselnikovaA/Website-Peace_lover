@@ -9,6 +9,7 @@
   <title>Миролюбец</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -78,7 +79,7 @@
           </div>
           <!-- /.navbar-menu -->
         <div class="navbar-call">
-          <button class="button navbar-menu__button menu-alert">меню</button>
+          <button class="button navbar-menu__button menu-alert"><span></span></button>
           <button type="button" class="modal-alert navbar__button"><img src="img/navbar/navbar-call.png"
               alt="Логотип"></button>
         </div>
@@ -141,17 +142,21 @@
       <div class="announce-wrap">
         <h2 class="section-title announce__title">Анонсы</h2>
         <div class="announce-card">
-          <div class="slider">
-            <div class="slider__item">
-              <iframe class="slider_video" src="https://www.youtube.com/embed/n9kx5Vk0jgc" frameborder="0"
+          <div class="announce-slider">
+            <div class="announce-slider__item">
+              <iframe src="https://www.youtube.com/embed/n9kx5Vk0jgc" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-              <!-- <img src="img/IMG_9615-1.JPG" alt=""> -->
-              <div class="slider__title">Рабочий процесс</div>
             </div>
-            <!-- /.slider__item -->
+            <!-- /.announce-slider__item -->
+            <div class="announce-slider__item">
+              <iframe src="https://www.youtube.com/embed/l_NURCAKryc" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- /.announce-slider__item -->
           </div>
-          <!-- /.slider -->
+          <!-- /.announce__slider -->
+          <div class="announce-slider__title">Рабочий процесс</div>
           <div class="announce-social">
             <ul class="announce-list">
               <li class="announce__item">
@@ -173,12 +178,8 @@
           </div>
           <!-- /.announce-social -->
           <div class="navigation announce__navigation">
-            <div class="navigation__left">
-              предыдущий
-            </div>
-            <div class="navigation__right">
-              следующий
-            </div>
+            <div class="navigation__left">предыдущий</div>
+            <div class="navigation__right">следующий</div>
           </div>
           <!-- /.navigation -->
         </div>
@@ -441,17 +442,11 @@
       // Маска для телфона
       $('.phone').mask('+7 (999) 999-99-99');
       // Скрипт слайдера
-      $('.slider').slick({
+      $('.announce-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: $('.navigation__left'),
         nextArrow: $('.navigation__right'),
-        responsive: [{
-          breakpoint: 620,
-          settings: {
-            arrows: false
-          }
-        }]
       });
     });
   </script>

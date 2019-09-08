@@ -92,7 +92,6 @@
         background-color: $secondary-color
         transition: 0.2s  
 
-
 .announce
   &__title
     text-align: left
@@ -103,13 +102,6 @@
     padding: 28px 30px
     background-color: $light-color
     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
-    &:hover
-      background-color: $secondary-color
-      cursor: pointer
-      .announce-social
-        background-color: $secondary-color
-      .slider__title 
-        color: $light-color
   &-social 
     position: absolute
     bottom: 103px
@@ -141,22 +133,18 @@
     font-size: 14px
     font-weight: bold
     color: #bcbcbc
-
-.slider 
-  &__title 
-    margin: 23px 0
-    margin-bottom: 30px
-    text-align: center
-    color: $text-color-light
-    font-size: 22px
-    font-weight: 700
-  &_video
-    width: 528px 
-    height: 328px
-
-iframe 
-  max-width: 100%
-  min-height: 100%
+  &-slider 
+    max-width: 528px
+    &__title 
+      margin: 23px 0
+      margin-bottom: 30px
+      text-align: center
+      color: $text-color-light
+      font-size: 22px
+      font-weight: 700
+iframe
+ width: 528px
+ height: 328px
 
 @media (max-width: 1200px)
   .news 
@@ -189,14 +177,11 @@ iframe
       max-width: 100%
       text-align: center
   .announce 
-    // &-wrap 
-    //   max-width: 100%
-    //   width: 100%
-    // &-social
-    //   left: 40%
-  .slider 
-    &__item 
-      margin: auto
+    &-wrap 
+      max-width: 100%
+    &-slider 
+      &__item 
+        margin: auto
 
 
 @media (max-width: 920px)
@@ -214,38 +199,18 @@ iframe
     &__title
       text-align: center
       margin-bottom: 50px
-
-
-@media (max-width: 620px)
-  .slider
-    &__item 
-      max-width: 428px 
-      height: 278px
-    &_video
-      max-width: 428px 
-      height: 278px
-  .announce
-    &-wrap 
-      max-width: 90%
     &-card 
-      min-height: 400px
+      min-height: 420px
+    &-slider 
+      max-width: 430px
     &-social 
-      bottom: 63px
-      left: 30%
-
-  .navigation__left, .navigation__right 
-    display: none
-
+      bottom: 113px
+      left: 145px
+  iframe
+    width: 428px
+    height: 250px
 
 @media (max-width: 568px)
-  .slider
-    &__item
-      max-width: 400px 
-      height: 258px
-    &_video
-      max-width: 400px 
-      width: 380px
-      height: 258px
   .news 
     &__image 
       display: none
@@ -266,64 +231,16 @@ iframe
       line-height: 12px
     &_big 
       font-size: 20px
+  iframe
+    margin: 0 auto
+    width: 328px
+    height: 250px
   .announce
-    &-card 
-      padding: 0
-      padding-top: 15px
-      min-height: 350px
+    &-slider
+      max-width: 330px
     &-social
       display: none
 
-@media (max-width: 490px)
-  .slider
-    &__item
-      max-width: 350px 
-      height: 220px
-    &_video
-      max-width: 350px 
-      width: 310px
-      height: 220px
-  .announce
-    &-card 
-      min-height: 300px
-
-@media (max-width: 430px)
-  .slider
-    &__item
-      max-width: 300px 
-      height: 210px
-    &_video
-      max-width: 300px 
-      width: 310px
-      height: 210px
-  .announce
-    &-card 
-      min-height: 300px
-
-@media (max-width: 390px)
-  .slider
-    &__item
-      width: 260px 
-      height: 190px
-    &_video
-      width: 260px 
-      height: 190px
-  .announce
-    &-wrap 
-      max-width: 100%
-      width: 100%
-
-@media (max-width: 370px)
-  .slider
-    &__item
-      width: 240px 
-      height: 170px
-    &_video
-      width: 240px 
-      height: 170px
-  .announce
-    &-card 
-      min-height: 250px
 
 
 
