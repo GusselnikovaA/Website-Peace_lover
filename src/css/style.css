@@ -2670,7 +2670,7 @@ iframe {
   top: 0;
   right: 0;
   font-size: 30px;
-  color: #c3759e;
+  color: #816890;
   border: none;
   background-color: #f7f7f7;
   outline: none;
@@ -2678,7 +2678,7 @@ iframe {
 }
 
 .modal-block__close:hover {
-  color: #816890;
+  color: #c3759e;
 }
 
 .modal__title {
@@ -2705,7 +2705,7 @@ iframe {
 .modal__button {
   margin-top: 10px;
   width: 100%;
-  background-color: #c3759e;
+  background-color: #816890;
   color: #ffffff;
 }
 
